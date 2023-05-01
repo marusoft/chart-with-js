@@ -52,9 +52,14 @@ anychart.onDocumentReady(function () {
   chart.draw();
   // get rid of the gaps to the right and left of the area.
   chart.xScale().mode("continuous");
+  
   // vertical crosshair line of a hovered data point.
   let crosshair = chart.crosshair();
   crosshair.enabled(true).yStroke(null).xStroke("#fff");
   crosshair.yLabel().enabled(false);
-// change the color of the
+
+  // change the color of the
+  series1.fill("#AC2132", 0.7).stroke("#AC2132", 1);
+
+  series2.fill("#DEC081", 0.7).stroke("#DEC081", 1);
 });
